@@ -1,0 +1,1971 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <base href="/res/app/wlxt/" />
+    <title>清华大学网络学堂</title>
+    <link rel="stylesheet" type="text/css" href="/res/app/wlxt/css/common.css?v=228">
+    <link rel="stylesheet" type="text/css" href="/res/app/wlxt/css/index.css?v=228">
+    <link rel="stylesheet" type="text/css" href="/res/app/wlxt/css/table.css?v=228">
+     <link rel="stylesheet" type="text/css" href="/res/app/wlxt/css/courselist.css?v=228">
+    <link rel="stylesheet" type="text/css" href="/res/app/wlxt/css/calendar.css?v=228">
+    <link rel="stylesheet" type="text/css" href="/res/app/wlxt/font-awesome/css/font-awesome.css?v=228" />
+    <link rel="stylesheet" type="text/css" href="/res/app/wlxt/css/select2/select2.css?v=228" />
+    <link href='css/qtip.css' rel='stylesheet' />
+    <link rel="stylesheet" href="/res/app/wlxt/js/plugin/pagination/pagination.css?v=228">
+    <script type="text/javascript" src="/res/app/wlxt/js/jquery.js?v=228"></script>
+   
+<style>
+/* display */
+.hidden { display:none;}
+.block {display: block;}
+.inlineBlock {display: inline-block;}
+  .list{color: #555555;font-size: 14px;}
+        .list .item {border-bottom: 1px solid #eeeeee;padding-bottom: 8px;margin-top: 20px;}
+        .list .item:first-child {border-bottom: 1px solid #eeeeee;padding-bottom: 8px;margin-top: 5px;}
+        .list .item p{display: inline-block;}
+        .list .item p a{color: #555555;font-size: 14px;}
+        .list .item p.caozuo a{margin-left: 40px;}
+        .list .item p.caozuo a:hover{margin-left: 40px;text-decoration: underline;}
+        .list .item p.caozuo a span{    display: inline-block;width: 14px;}
+        .list .item:hover .teac a{color: #1392f1;text-decoration: underline;}
+        /*.list .item:hover{background-color: #F0FCFF;}*/
+        .list .item a:hover{color: #1392f1;}
+        
+        .boxdetail .cour_left{width: 150px;}
+        
+        /*.boxdetail .cour_right{width: 784px;margin-left: 16px;}*/
+        .boxdetail dd.stu{padding: 20px 26px;}
+        .boxdetail dd .title{margin-left: 10px;font-size: 20px;padding-top: 0;line-height: 30px;height: auto;display: inline-block;}
+        .boxdetail dd .title.stu{margin-left: 10px;line-height:20px; max-width: 440px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+
+        .boxdetail .hdtitle.stu{border-bottom: none;padding-bottom: 17px;}
+        .boxdetail .hdtitle{border-bottom: 1px solid #dddddd;padding-bottom: 7px;}
+        .boxdetail .hdtitle a{color: #1392f1;}
+        .boxdetail .state.stu{margin-top: 0;}
+        .boxdetail .state ul.stu{width: 956px;border: 1px solid #ddd;}
+        .boxdetail .state.stu li{width: 161px;padding:16px 12px;min-height: 90px;}
+        .boxdetail .state.stu li:first-child{width:150px;padding:10px 10px 8px 10px;}
+        .boxdetail .state .unsee{font-size: 14px;color: #444444;}
+        .boxdetail .state .unsub{font-size: 14px;color: #444444;}
+
+
+        .boxdetail .state .num.liulan{float: left;}
+        /*.boxdetail .state .num.faqi{font-size: 14px;}*/
+        .boxdetail .state .zcount_stu{margin-top: 28px;}
+        /*.boxdetail .state.stu {-margin-top: 0;margin-right: 0;*/
+        /*float: left;}*/
+        .hdtitle .btngroup .stu_btn{
+            min-width: 130px;height: 28px;display: block;float: left;
+            color: #444444;
+            line-height: 22px;font-size: 16px;margin-right: 12px;
+        }
+        .hdtitle .btngroup .stu_btn_pai{
+            width: 355px;height: 28px;display: block;float: left;
+            color: #444444;
+            line-height: 24px;font-size: 14px;
+            text-overflow: ellipsis;overflow: hidden;white-space: nowrap;
+        }
+        .boxdetail .state .num{font-size: 12px;}
+        .boxdetail .state .orange.stud{padding-left: 8px;font-size: 17px;}
+        .boxdetail .state .wee.stud{padding-left: 8px;color: #4fc2b9;font-size: 17px;}
+        .boxdetail .state .green.stud{padding-left: 8px;color: #8fca6e;font-size: 17px;}
+
+        .boxdetail .state .uuuhhh span.name:hover{text-decoration: underline;color: #1392f1;}
+        
+</style>
+</head>
+
+<body class="bg">
+   
+
+
+
+
+<style>
+ .hidden {display:none}
+ .more {cursor:pointer}
+</style>
+<link rel="stylesheet" type="text/css" href="/res/app/wlxt/css/zeroModal/zeroModal.css?v=228" />
+<link rel="stylesheet" type="text/css" href="/res/app/wlxt/myfonts/fonticon.css?v=228">
+<link rel="stylesheet" type="text/css" href="/res/app/wlxt/font-awesome/css/font-awesome.css?v=228">
+<link rel="stylesheet" type="text/css" href="/res/app/wlxt/css/upload-cropper/amazeui.min.css?v=228">
+<link rel="stylesheet" type="text/css" href="/res/app/wlxt/css/upload-cropper/amazeui.cropper.css?v=228">
+<link rel="stylesheet" type="text/css" href="/res/app/wlxt/css/upload-cropper/mycropper_img.css?v=228">
+<!-- ( {{value.count}})   <input type="text" class="dataTable-search" sname="bt" value="{{con}}" id="searchkenei">  <!-- 搜索内容后台填写 -->
+                      <!--  <a  onclick="courseinsideSearch()" class="btn"><i class="fa fa-search"></i>搜索</a>-->
+      <script type="text/html" id="searchconspt">
+        <div class="fl course-w clearfix" style="" id="searchpanel">
+            <div class="notice clearfix">
+                <div class="tit clearfix">
+                    <span class="xuetang left">课内搜索</span>
+                </div>
+            </div>
+            <div class="detail clearfix">
+                <form action="" name="form" method="get">
+                    <div class="note_search kenei">
+                    </div>
+                    <div class="navbar" style="margin-top:10px">
+                        {{each tablist value i}} 
+                        {{each value.list value j}} 
+                        <a href="javascript:void(0)" class="{{if j==tab}}active{{/if}}" id="all" onclick="tabchange({{j}})">{{value.title}} (<span class="count-{{j}}">0</span>)</a> 
+                        {{/each}}
+                        {{/each}}
+                    </div>
+                    <ul class="tablist">
+                        <li attr-id="all" style="" id="alltab">
+                            <div id="ggdiv" class="listpanel hidden nonum " style="margin-top: 24px;">
+                                <div class="title">
+                                  	  公告<a onclick="tabchange(1)"class="more">更多</a>
+                                </div>
+                                <table id="ggalltable" class="table dataTable"> </table>
+                            </div>
+ 							<div id="kjdiv"class="hidden listpanel">
+                                <div class="title">
+                              	      文件<a  onclick="tabchange(2)"class="more">更多</a>
+                                </div>
+                                <table id="kjalltable"class="table biji dataTable">   </table>
+                            </div>
+                            <div id="zydiv"class="hidden listpanel">
+                                <div class="title">
+                                 	   作业<a  onclick="tabchange(3)"class="more">更多</a>
+                                </div>
+                                <table id="zyalltable"class="table zuoye dataTable"> </table>
+                            </div>
+                             <div id="tldiv"class="hidden listpanel">
+                                <div class="title">
+                                                                               讨论<a  class="more"onclick="tabchange(4)">更多</a>
+                                </div>
+                                   <table id="bbsalltable"class="table taolun dataTable">  </table>
+                            </div>
+ 							<div id="dydiv"class="hidden listpanel">
+                                <div class="title">
+                              	      答疑<a  class="more"onclick="tabchange(5)">更多</a>
+                                </div>
+                                <table id="dyalltable"class="table biji dataTable">   </table>
+                            </div>
+                            <div id="bjdiv"class="hidden listpanel">
+                                <div class="title">
+                              	      笔记<a  class="more" onclick="tabchange(6)">更多</a>
+                                </div>
+                                <table id="bjalltable" class="table biji dataTable"></table>
+                            </div>
+                        </li>
+                        <li style="" id="other">
+						<table id="examplesearch"  class="nonum"></table>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </script>
+    
+  <style>
+  	    .header .right span.teacher-logo {
+  	    position: relative;
+  	    width: 36px;
+  	    height: 36px;
+  	    background: url("/b/wlxt/xt/v_jsxsxx/teacher/queryZpByZjh?zjh=41f86da45696fd8ddd5853c3e75a04e5") no-repeat center;
+  	    background-size:cover;
+  	    vertical-align: middle;
+  	    border-radius: 50%;
+  	    margin-right: 8px;
+    	}
+    	.right >div >a >i[class^="webicon-"]{position:relative;top:-1px;}
+  </style>
+<input type="hidden" id="ggallnum">
+<input type="hidden" id="kjallnum">
+<input type="hidden" id="zyallnum">
+<input type="hidden" id="bbsallnum">
+<input type="hidden" id="dyallnum">
+<input type="hidden" id="bjallnum">
+<input value="2015012523" type="hidden" id="userid">
+<input value="" type="hidden" id="course_id"> 
+ <input value="" type="hidden" id="wlkcid">   
+ <input value="" type="hidden" id="searchkey">  
+  
+ <div class="header">
+        <div class="w">
+            <div class="left">
+                <a style="cursor: pointer;" href="/f/wlxt/index/course/student/index" ><img src="/res/app/wlxt/img/netcourse_logo.png" alt="退出"></a>
+            </div>
+            <div class="right">
+                <div  id="filtericon" style="position: relative;"><a class="user-log" onclick="javascript:onclick_open();" id="filtericon2">
+                    <span class="teacher-logo" style="display: inline-block;"></span>
+                    包鑫霖<i class="webicon-godown"></i><i class="webicon-goup"></i></a>
+                    <div class="divbox filter clearfix">
+                        <div class="triangle"></div>
+                        <div class="state_div"></div>
+                        <div class="logo-cot">
+                            <div class="logo-info">
+                                <div class="up-img-cover fl" id="up-img-touch">
+
+                                    <span class="teacher-logo" style="width: 60px;display: inline-block;height: 60px;"></span>
+                                    <div class="logo-bg" style="" id="uploadol">更改头像</div>
+                                </div>
+                                <div class="fl up-img-info">
+                                    <p>
+                                        <label>包鑫霖</label>
+                                        <label>同学</label>
+                                    </p>
+                                    <p>
+                                        <label>经管学院</label>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+<!--                         <div class="outbox"> -->
+
+<!--                         </div> -->
+                    </div>
+                </div>
+
+               <!--  <div><a class="user-log" onclick="javascript:onclick_open();">包鑫霖</a></div> -->
+               
+                 	
+	                
+	                	<div id="setting"><a><i class="webicon-Setup"></i><span>设置</span></a></div>
+	                
+                
+
+
+
+                <script type="text/html" id="settings_tip">
+                  <ul style="">
+                    <div class="triangle"></div>
+                    <!-- <li class="fontSize clearfix" id="">
+                        <div class="fl sizeziti">字体大小</div>
+                        <div class="fl setingziti">
+                            <p><span>A</span><span>A</span></p>
+                            <div id="slideThree" class="slideThree">
+                                <input type="checkbox" value="None" id="" name="check" checked="checked">
+                                <label for="slideThree"></label>
+                            </div>
+                        </div>
+                    </li>-->
+                    <!-- <li class="fontbox" style="line-height: 46px;border-bottom: 1px solid #eaeaea;"><span>字体大小</span></li> -->
+					
+					
+						
+							<li style="text-align: center;line-height: 46px;cursor: pointer;" id="mail">设置自动提醒邮件</li>
+							<li style="text-align: left;line-height: 46px;cursor: pointer;padding-left:20px;" id="stmail"><span>设置邮箱</span></li>
+						
+ 						
+					
+                  </ul>
+                </script>
+                <!-- <div><a><i class="fa webicon-kccj" ></i>字号</a></div> -->
+                <div><a target="_blank"  rel="noopener noreferrer" href="/f/wlxt/common/courseSearch"><i class="webicon-top-search" ></i>课程搜索</a></div>
+                
+                
+                
+                <div><a href="/f/wlxt/common/help" target="_blank"  rel="noopener noreferrer" ><i class="webicon-help" ></i>帮助</a></div>
+                <div><a ref="javascript:void(0);"  onclick="beforeLogout();"><i class="webicon-out"></i>退出登录</a></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/html" id="IE9tempbigger">
+        <div class="change-logo">
+            <div><a style="text-align: center; display: block;" id="pic"></a></div>
+            <!-- 图片上传框 -->
+            <div class="am-modal am-modal-no-btn up-frame-bj " tabindex="-1" id="doc-modal-1">
+                <div class="am-modal-dialog up-frame-parent up-frame-radius">
+                    <div class="am-modal-hd up-frame-header">
+                        <label>更改头像</label>
+                        <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+                    </div>
+                    <div class="am-modal-bd  up-frame-body clearfix" style="width: 100%;">
+                        <div class="am-g am-fl">
+                            <label class="am-form-group am-form-file"  for='inputImage'>
+                                <div class="am-btn am-btn-default am-btn-sm">选择要上传的文件</div>
+                                <input type="file" id="inputImage">
+								<!--<div><label class="labelmiddle">提示：请上传尺寸不超过1024*768px的图片</label></div> -->
+                            </label>
+                        </div>
+                        <div class="am-g am-fl">
+                            <div class="up-pre-before up-frame-radius">
+								<img alt="" src="/b/wlxt/xt/v_jsxsxx/teacher/queryZpByZjh?zjh=41f86da45696fd8ddd5853c3e75a04e5" id="image">
+							</div>
+                            <div class="up-pre-after up-frame-radius"></div>
+                            <label class="first_label">裁剪效果预览</label>
+                            <label class=" labelmiddle">此头像用于课程信息、课程答疑、课程讨论</label>
+                        </div>
+                    </div>
+                    <div class="am-modal-bd  up-frame-footer">
+                        <div class="sub-back">
+                            <input id="up-btn-ok" url="/b/wlxt/xt/v_jsxsxx/teacher/uploadZpByZjh?zjh=2015012523" type="submit" value="确定" class="btn">
+                            <input data-am-modal-close="" type="button" value="取消" class="btn">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 加载框 -->
+            <div class="am-modal am-modal-loading am-modal-no-btn" tabindex="-1" id="my-modal-loading">
+                <div class="am-modal-dialog">
+                    <div class="am-modal-hd">正在上传...</div>
+                    <div class="am-modal-bd">
+                        <span class=""></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 警告框 -->
+            <div class="am-modal am-modal-alert am-modal-active" tabindex="-1" id="my-alert">
+                <div class="am-modal-dialog">
+                    <div class="am-modal-hd mycheck mb10_fts17"><i class="webicon-t_check"></i></div>
+                    <div class="zeromodal-title1" id="alert_content">上传文件失败了！</div>
+					<div zeromodal-btn-container="f097b83639ae44c0a25ab84265e88f57" class="zeromodal-btn-container">
+						 <button zeromodal-btn-ok="f097b83639ae44c0a25ab84265e88f57" class="btn btn-primary" onclick="onclick_queding();">确定</button>
+					</div>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script type="text/html" id="IE9temp">
+        <div class="shade" style="display: none;"></div>
+        <div class="shade_content" style="display: none;">
+            <div class="add-group">更改头像</div>
+            <div class="panel-body clearfix">
+                <div class="logoupload fl">
+                    <div class="btn btn-upload"></div>
+                    <!--<div class="img_place"><img  src="img/hu.jpg" width="80" height="80"></div>-->
+
+                    <p>选择文件</p>
+                </div>
+                <div class=" fl">
+                    <div class="upload_img"></div>
+                </div>
+                <div class="logoupload fl">
+
+                    <input type="file" name="file" id="doc" onchange="setImagePreview(this);">
+                    <p>预览效果</p>
+                </div>
+            </div>
+            <div class="kine">
+                <div class="sub-back clearfix">
+
+                    <input onclick="onclick_close();" type="button" value="取消" class="btn">
+                </div>
+            </div>
+            <div class="shade-close" onclick="onclick_close();"><i class="fa fa-times"></i></div>
+        </div>
+    </script>
+    <div id="uploadimg"></div>  
+
+<link rel="stylesheet" type="text/css" href="/res/app/wlxt/css/zeroModal/zeroModal.css?v=228" />
+<link rel="stylesheet" type="text/css" href="/res/app/wlxt/myfonts/style.css?v=228" />
+<style>
+    .tsk{display: none;}
+    .jg {
+        padding-left: 67px;
+    }
+
+    .jg img {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .jg .item {
+        display: inline-block;
+        vertical-align: top;
+        padding-top: 6px;
+    }
+
+    .jg .item p {
+        font-size: 20px;
+        color: #ff9600;
+        line-height: 1;
+    }
+
+    .jg .item p.last {
+        color: #777777;
+        margin-top: 12px;
+    }
+
+    .llq-tb {
+        display: table;
+        margin-top: 54px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .llq-tb .td {
+        display: table-cell;
+        text-align: center;
+        width: 159px;
+        height: 208px;
+    }
+
+    .llq-tb .name {
+        font-size: 18px;
+        color: #666;
+        margin-top: 24px;
+        margin-bottom: 12px;
+    }
+
+    .loadbtn {
+        line-height: 34px;
+        width: 100px;
+        text-align: center;
+        font-size: 14px;
+        display: inline-block;
+        color: #aaa;
+    }
+    a.loadbtn{
+        background-color: #1493f2;
+        border-radius: 17px;
+        color: #fff;
+    }
+
+    .loadbtn:hover {
+        opacity: 0.8;
+    }
+    .tsgrey{position: fixed;top: 0;left: 0;bottom: 0;right: 0;background-color: #000;opacity: 0.3;display: none;}
+    .llq-tb .browser_ic {color: #cccccc;margin-bottom: 26px;}
+    .llq-tb .browser_ic i{font-size: 24px;}
+    .llq-tb .browser_ic i.webicon-Windows{font-size: 20px;}
+
+    
+    
+</style>
+<div class="tsgrey" id="tsgrey"></div>
+<div zero-unique-container="bd7d5517ce6447878787942dfd86ba0d" class="zeromodal-container llq tsk" id="tsk" style="z-index: 10002; width: 1100px; height: 500px; left:50%; top: 200px; position: absolute; margin: 0px;margin-left: -550px;" >
+    <div zero-unique-top="bd7d5517ce6447878787942dfd86ba0d" class="zeromodal-top" style="cursor: move;"></div>
+    <div zeromodal-unqiue-header="bd7d5517ce6447878787942dfd86ba0d" class="zeromodal-header" style="border-bottom: none;">
+        <div title="关闭" zero-close-unique="bd7d5517ce6447878787942dfd86ba0d" class="zeromodal-close"><i class="webicon-g_close" id="closebtn"></i></div> <span class="modal-title"></span> </div>
+    <div zero-unique-body="bd7d5517ce6447878787942dfd86ba0d" class="zeromodal-body zeromodal-overflow-y" style="height: 450px;">
+
+        <div class="jg" >
+            <img src="/res/app/wlxt/img/jg.png" alt="" width="72" height="67">
+            <div class="item">
+                <p id="jgMessage">系统不支持您当前使用的浏览器，系统功能可能无法正常使用！</p>
+                <p class="last">请您使用下列浏览器访问本系统。</p>
+            </div>
+        </div>
+        <div class="llq-tb">
+            <div class="td">
+                <img src="/res/app/wlxt/img/Chromeicont.png" alt="">
+                <p class="name">Chrome</p>
+                <p class="browser_ic"><i class="webicon-Windows"></i><i class="webicon-mac"></i></p>
+                <a href="" class="loadbtn" id="chrome">下载</a>
+            </div>
+            <div class="td">
+                <img src="/res/app/wlxt/img/firefoxicon.png" alt="">
+                <p class="name">Firefox</p>
+                <p class="browser_ic"><i class="webicon-Windows"></i><i class="webicon-mac"></i></p>
+                <a href="" class="loadbtn" id="firefox">下载</a>
+            </div>
+            <div class="td">
+                <img src="/res/app/wlxt/img/safariicon.png" alt="">
+                <p class="name">Safari</p>
+                <p class="browser_ic"><i class="webicon-mac"></i></p>
+                <!--  <a href="" class="loadbtn">下载</a> -->
+                <p href="" class="loadbtn">系统自带</p>
+            </div>
+            <div class="td">
+                <img src="/res/app/wlxt/img/edgeicon.png" alt="">
+                <p class="name">Edge</p>
+                <p class="browser_ic"><i class="webicon-Windows"></i></p>
+                <!--  <a href="" class="loadbtn">下载</a> -->
+                <p href="" class="loadbtn">系统自带</p>
+            </div>
+            <div class="td">
+                <img src="/res/app/wlxt/img/ieicon.png" alt="">
+                <p class="name">IE11</p>
+                <p class="browser_ic"><i class="webicon-Windows"></i></p>
+                <p href="" class="loadbtn">系统自带</p>
+            </div>
+            <div class="td">
+                <img src="/res/app/wlxt/img/ieicon.png" alt="">
+                <p class="name">IE10</p>
+                <p class="browser_ic"><i class="webicon-Windows"></i></p>
+                <a href="" id="ie10" class="loadbtn">下载</a>
+                <p href="" id="ie10Mac" class="loadbtn">使用Windows下载</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var showTs = function() {
+        document.getElementById('tsgrey').style.display="block";
+        document.getElementById('tsk').style.display="block";
+    };
+    var hideTs = function() {
+        document.getElementById('tsgrey').style.display="none";
+        document.getElementById('tsk').style.display="none";
+    };
+
+    function BrowserType()
+    {
+        var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
+        var isOpera = userAgent.indexOf("Opera") > -1; //判断是否Opera浏览器
+        var isFF = userAgent.indexOf("Firefox") > -1; //判断是否Firefox浏览器
+        var isSafari = userAgent.indexOf("Safari") > -1 && userAgent.indexOf("Chrome") == -1; //判断是否Safari浏览器
+        var isChrome = userAgent.indexOf("Chrome") > -1 && userAgent.indexOf("Safari") > -1&&!isEdge; //判断Chrome浏览器
+
+        var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1; //判断是否IE<11浏览器
+        var isEdge = userAgent.indexOf("Edge") > -1 && !isIE; //判断是否IE的Edge浏览器
+        var isIE11 = userAgent.indexOf('Trident') > -1 && userAgent.indexOf("rv:11.0") > -1;
+        if(isIE) {
+            var reIE = new RegExp("MSIE (\\d+\\.\\d+);");
+            reIE.test(userAgent);
+            var fIEVersion = parseFloat(RegExp["$1"]);
+            if(fIEVersion == 7) {
+                return 7;
+            } else if(fIEVersion == 8) {
+                return 8;
+            } else if(fIEVersion == 9) {
+                return 9;
+            } else if(fIEVersion == 10) {
+                return "IE10";
+            } else {
+                return 6;//IE版本<=7
+            }
+        } else if(isEdge) {
+            return 'Edge';//edge
+        } else if(isIE11) {
+            return "IE11"; //IE11
+        }
+
+        if (isFF) { return "Firefox";}
+        if (isOpera) { return "Opera";}
+        if (isSafari) { return "Safari";}
+        if (isChrome) { return "Chrome";}
+        if (isEdge) { return "Edge";}
+    }//myBrowser() end
+
+
+
+
+
+    var browserFilter = ["Chrome","Firefox","Safari","Edge","IE11","IE10"];
+    function checkIfCurrentBrowserInBrowserFilter() {
+        var currentBrowserType = BrowserType();
+        //alert(currentBrowserType);
+        var flag = false;
+        for(var i=0;i<browserFilter.length;i++){
+            if(browserFilter[i]==currentBrowserType){
+                flag = true;
+                break;
+            }
+        }
+        if(!flag){
+            setDownLoadHref();
+            showTs();
+            document.getElementById("closebtn").onclick=function(){
+                hideTs();
+            }
+        }else{
+            hideTs();
+        }
+
+    }
+
+    checkIfCurrentBrowserInBrowserFilter();
+
+    function getSysBit(){
+        var x  = navigator.userAgent.match(/x86_64|Win64|WOW64/) ||navigator.cpuClass === 'x64' ? 'x64' : 'x86';
+        return x;
+    }
+
+    /**
+     * 获取系统类型
+     * @return {'Mac' or 'Win' or 'Linux'}
+     */
+    function getSysType(){
+        var os = navigator.platform.match(/(Win|Mac|Linux)/);//系统
+        var x = os && os[1];
+        return x;
+    }
+    function setDownLoadHref() {
+
+        if(getSysType()=="Mac"){
+            document.getElementById("chrome").href= "https://cloud.tsinghua.edu.cn/d/6275018c12d849bfb040/files/?p=/chrome-mac.dmg&dl=1";
+            document.getElementById("firefox").href = "https://cloud.tsinghua.edu.cn/d/6275018c12d849bfb040/files/?p=/Firefox-mac.dmg&dl=1" ;
+            document.getElementById("ie10Mac").style.display="inline";
+            document.getElementById("ie10").style.display="none";
+        }
+         if(getSysType()=="Win"){
+            if(getSysBit()=="x64"){
+                document.getElementById("chrome").href = "https://cloud.tsinghua.edu.cn/d/6275018c12d849bfb040/files/?p=/chrome64_stable_windows_installer.exe&dl=1";
+                document.getElementById("firefox").href = "https://cloud.tsinghua.edu.cn/d/6275018c12d849bfb040/files/?p=/Firefox-full-latest.exe&dl=1";
+                document.getElementById("ie10").href = "https://cloud.tsinghua.edu.cn/d/6275018c12d849bfb040/files/?p=/IE10-Windows7-x64-en-us.exe&dl=1";
+                document.getElementById("ie10Mac").style.display="none";
+            }
+
+            if(getSysBit()=="x86"){
+                document.getElementById("chrome").href = "https://cloud.tsinghua.edu.cn/d/6275018c12d849bfb040/files/?p=/Google_Chrome_%2832bit%29_v55.0.2883.87.exe&dl=1";
+                document.getElementById("firefox").href = "https://cloud.tsinghua.edu.cn/d/6275018c12d849bfb040/files/?p=/Firefox-full-latest.exe&dl=1";
+                document.getElementById("ie10").href = "https://cloud.tsinghua.edu.cn/d/6275018c12d849bfb040/files/?p=/IE10-Windows7-x86-en-us.exe&dl=1";
+                document.getElementById("ie10Mac").style.display="none";
+            }
+        }
+    }
+
+$(function () {
+    $("#downloadBrowser").click(function () {
+        scrollTo(0,0);
+        $("#jgMessage").css("display","none");
+        setDownLoadHref();
+        showTs();
+        document.getElementById("closebtn").onclick=function(){
+            hideTs();
+        }
+    });
+});
+
+
+</script>  
+<script type="text/javascript">
+$(function(){
+var XSLB = "本科生"
+var TS = ""
+var EMAIL = "120540590@qq.com"
+if(EMAIL == "" || EMAIL == null){
+	if(XSLB == "研究生"){
+		TS = "您尚未设置常用邮箱，网络学堂无法给您发送自动邮件提醒，也无法在发送给老师的提醒中告知老师您的邮箱地址。<br/><a href='http://zhjw.cic.tsinghua.edu.cn/jxmh.do?m=yjs_EditGrxx' style='color:#1392f1'>去info设置邮箱</a> （注：在info设置后，24小时后邮箱地址会同步到网络学堂。之后，您可以设置自动提醒邮件选项）。"
+	}else if(XSLB == "本科生"){
+		TS = "您尚未设置常用邮箱，网络学堂无法给您发送自动邮件提醒，也无法在发送给老师的提醒中告知老师您的邮箱地址。<br/><a href='http://zhjw.cic.tsinghua.edu.cn/jxmh.do?m=bks_EditGrxx' style='color:#1392f1'>去info设置邮箱</a> （注：在info设置后，24小时后邮箱地址会同步到网络学堂。之后，您可以设置自动提醒邮件选项）。"
+	}else{
+		TS = null;
+	}
+}else{
+	if(XSLB == "研究生"){
+		TS = "您当前设置的邮箱为："+EMAIL+"，<br/>如需修改，请<a href='http://zhjw.cic.tsinghua.edu.cn/jxmh.do?m=yjs_EditGrxx' style='color:#1392f1'>info设置邮箱</a> （注：在info设置后，24小时后邮箱地址会同步到网络学堂。之后，您可以设置自动提醒邮件选项）。"
+	}else if(XSLB == "本科生"){
+		TS = "您当前设置的邮箱为："+EMAIL+"，<br/>如需修改，请<a href='http://zhjw.cic.tsinghua.edu.cn/jxmh.do?m=bks_EditGrxx' style='color:#1392f1'>去info设置邮箱</a> （注：在info设置后，24小时后邮箱地址会同步到网络学堂。之后，您可以设置自动提醒邮件选项）。"
+	}else{
+		TS = null;
+	}
+}
+	$("#setting").delegate('#stmail', 'click', function(event) {
+	    zeroModal.show({
+	                title: '设置邮箱',
+	                content:TS,
+	                width: '600px',
+	                height: '217px',
+	                ok: false,
+	                overlay: true,
+	                cancel: false,
+	                cancelTitle: "取消",
+	                css:'remindmail',
+	});
+	    });	
+	 var key = getCookie("searchkey")
+	 $("#searchcourse").val(key);
+	 
+	//设置邮件提醒
+	 $("#setting").hover(function() {
+            /* Stuff to do when the mouse enters the element */
+
+            $("#setting").append('<div id="dw"></div>');
+            //debugger;
+            var mytabhtml = template('settings_tip', {}); 
+            $("#dw").html(mytabhtml); 
+            if(getCookie("wlxt|nav_font")&&getCookie("wlxt|nav_font")!=" "){
+                $("#slideThree").addClass('yes');
+                $("#slideThree").children('input').prop('checked', 'checked');
+            }
+        }, function() {
+	        /* Stuff to do when the mouse leaves the element */
+	         $("#dw").remove('');
+
+	    }).delegate('#mail', 'click', function(event) {
+	        zeroModal.show({
+	            title: '设置自动提醒邮件',
+	            url: '/f/wlxt/setting/yh_csb/student/beforeEdit',
+	            width: '600px',
+	            height: '410px',
+	            ok: true,
+	            overlay: true,
+	            cancel: true,
+	            cancelTitle: "取消",
+	            okFn: function(opt) {
+	                console.log(opt);
+	                $.ajax({
+	        			url:$("#settingEditForm").attr("action"),
+	        			method :  "POST",
+	        			dataType:"json",
+	        			data : JSON.stringify($("#settingEditForm").serializeArray()),
+	        			contentType:"application/json",
+	        			success:function(r){
+	        				
+	        			}
+	        		  });
+	                
+	                return true;
+	            }
+
+	        });
+	    }).delegate('#slideThree', 'click', function(event) {
+            if ($(this).hasClass('yes')) {  //小字体
+                $(this).removeClass('yes');
+                $(this).children('input').prop('checked', '');
+                $("body").removeClass("bigger");
+                deleteCookie("wlxt|nav_font");
+            } else {
+                $(this).addClass('yes');
+                $(this).children('input').prop('checked', 'checked');
+                $("body").addClass("bigger");
+                setCookie("wlxt|nav_font", "bigger", 15);
+            }
+        });
+});
+function switchTo(lang){ 
+	 $.get("/?websiteShowLanguage=" + lang,
+				function(data){ }
+	   );	 
+		window.location.href = window.location.href;
+}
+
+//退出
+function beforeLogout(){
+	
+	var info='您将要退出网络学堂';
+	MyApp.showConfirm(info,function(){
+		 MyApp.post("/f/j_spring_security_logout",function () {
+	            	window.location.href = "/";
+
+	        });
+		 
+	});
+	
+}
+var editoron=false;
+var jsAppVersion = 228;
+</script>
+<script type="text/javascript" src="/res/app/wlxt/js/student/courseInsideSearch.js?v=228"></script>
+
+
+    <div class="nav">
+        <input  type="hidden"  id="currentSemester" value="2018-2019-2"></input>
+        <input  type="hidden"  id="nextSemester" value="2018-2019-3"></input>
+        <input  type="hidden"  id="doublenextSemester" value=""></input>
+        <ul id="myTabs" class="nav nav-tabs clearfix" role="tablist">
+            <div class="content">
+                <li style="cursor:pointer;"role="presentation" class="active"><a class="#course1" onclick="return false;" id="profile0-tab" ><span id="profile0-tab-span"></span>课程</a></li>
+                <li style="cursor:pointer;"role="presentation"><a role="tab" class="#course2"  onclick="return false;" id="profile-tab" data-toggle="tab" aria-controls="profile" ><span id="profile-tab-span"></span>课程</a></li>
+                <li style="cursor:pointer;"role="presentation"><a role="tab" class="#course3" onclick="return false;" id="profile1-tab" data-toggle="tab" aria-controls="profile"><span id="profile1-tab-span"></span>课程</a></li>
+                <li style="cursor:pointer;"role="presentation"  id="yqxq"><a class="#over" role="tab" id="profile2-tab" data-toggle="tab" aria-controls="profile" onclick="beforecourse();">以前学期课程</a></li>
+                <li style="cursor:pointer;"role="presentation"><a class="#open" role="tab" id="profile3-tab" data-toggle="tab" aria-controls="profile" onclick="schoolCourse.getData(2);">公开课程</a></li>
+            </div>
+        </ul>
+        <div id="myTabContent" class="tab-content content">
+         <!-- 当前学期 -->
+            <div role="tabpanel" class="tab-pane fade in" id="course1">
+                <dl class="boxdetail hidden">
+                    <dt class="title">所学课程</dt>
+					 <div id="suoxuecourse">
+					 </div>
+                </dl>
+                <dl class="boxdetail hidden">
+                    <dt class="title">合教课程</dt>
+                    <div id="cocourse"></div>
+                </dl>
+                <dl class="boxdetail hidden">
+                    <dt class="title">助教课程</dt>
+                    <div id="assistcourse"></div>
+                </dl>
+            </div>
+            <!-- 下学期 -->
+            <div role="tabpanel" class="tab-pane fade" id="course2" aria-labelledby="profile-tab">
+                 <dl class="boxdetail hidden">
+                    <dt class="title  ">所学课程</dt>
+                     <div id="nextsuojiaocourse">
+                     </div>
+                </dl>
+                <dl class="boxdetail hidden">
+                    <dt class="title">助教课程</dt>
+                   <div id="nextassistcourse" >
+                    </div>
+                    
+                </dl>
+            </div>
+            <!-- 下下学期 -->
+            <div role="tabpanel" class="tab-pane fade" id="course3" aria-labelledby="profile1-tab">
+                 <dl class="boxdetail hidden">
+                    <dt class="title ">所学课程</dt>
+					 <div id="doubleNextsuojiaocourse"></div>
+                </dl>
+                <dl class="boxdetail hidden">
+                    <dt class="title">助教课程</dt>
+                    <div id="doubleNextassistcourse"></div>
+                </dl>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="over" aria-labelledby="profile2-tab">
+                <div class="boxdetail  open clearfix">
+                    <div class="search">
+                    <form id="queryBeforeCourseList" action="" name="form" method="get">
+                        <input type="text"  id="kcmid" sname="kcm" class="dataTable-search" placeholder="关键字" />
+                        <input type="hidden"  id="hiddenxnxq" sname="xnxq" class="dataTable-search" placeholder="关键字" />
+                        <input type="hidden"  id="hiddenjslx" sname="jslx" class="dataTable-search" placeholder="关键字" />
+                        <select  class="xqxqselect"  id="xqxqselect" onchange="xnxqchange();">
+                         <option value="">所有学期</option>
+                        </select>
+                        <select id="jslxselect" onchange="jslxchange();">
+                            <option value="">全部课程</option>
+                            <option value="3">所学课程</option>
+                            <option value="0">助教课程</option>
+                        </select>
+                        <a href="javascript:;" onclick="queryBeforeCourseSearch();searchkeygl()" id="beforeSearchbtn"class="searchbtn"><i class="fa fa-search"></i>搜索</a>
+                        </form>
+                    </div>
+                    <table id="overtable" style="width: 100%;">
+                     
+                    </table>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="open" aria-labelledby="profile2-tab">
+                <div class="boxdetail  open clearfix">
+                    <div class="tabbox" id="tabbox">
+                        <ul class="mytabs clearfix"> 
+                            <li class="active" onclick="changeTab(2,this);clean();schoolCourse.getData(2)">全球公开课</li>
+                            <li onclick="changeTab(1,this);clean();schoolCourse.getData(1)">校内公开课</li>
+                        </ul>
+                    </div>
+                    <div class="search">
+                    	<form id="getAllNetCourse" method="post" onsubmit="return false;">
+                    	   <input type="hidden" id="type" value="2"/>
+	                       <input type="text" name="kcm" id="kcm" placeholder="关键字" />
+	                       <select name="xnxq" class="xqxqselect xqxqselectid" id="xqxqselect">
+	                           <option value="">所有学期</option>
+	                       </select>
+	                       <select name="kcflm" id="kcflmselect" onchange="kcflmchange();" style="margin-right: 10px;">
+			                   <option value="">&nbsp;&nbsp;全部本研课程</option>
+			                   <option value="001">&nbsp;&nbsp;本科生课程</option>
+			                   <option value="002">&nbsp;&nbsp;研究生课程</option>
+			               </select> 
+	                       <select name="kkdwnm" id="dwmcselect">
+	                           <option value="">&nbsp;&nbsp;所有系</option>
+	                       </select>
+	                       <a href="javascript:;" onclick="schoolCourse.getData();searchkeygl();" class="searchbtn"><i class="fa fa-search"></i>搜索</a>
+                        </form>
+                    </div>
+                    <div id="con">
+                        <div class="notice">
+                            <div id="schandglobadiv"class="con clearfix">
+                                
+                            </div>
+                        </div>
+                        <!--分页-->
+						 <div style="width: 100%;"class="pagewraper clearfix hw-list-footer">
+						    <div class="item-count fl" style="margin-left: 20px; font-size: 12px;">共 <span class="totalNum">0</span> 条数据</div>
+						    <div class="cont rt">
+						            <span style="font-size: 12px;color: #999999">每页显示
+						             <select name="type" onchange="schoolCourse.pagination.changeSizePerPage(this.options[this.options.selectedIndex].value,this)">
+						               <option value="12">12</option>
+						               <option value="24">24</option>
+						               <option value="48">48</option>
+						               <option value="1000">1000</option>
+						           </select>
+						            </span>
+						        <div id="pagefooter">
+						        <span class="right mr20 black"><span class="fb currentPage"></span>/<span class="totalPage"></span>页 </span>
+						    <!--     <ul class="pagination"> -->
+									 <a href="javascript:;" onclick="schoolCourse.pagination.turnPage('1');">首页 </a> 
+									 <a href="javascript:;" onclick="schoolCourse.pagination.turnPage('-');">上一页</a> 
+									 <a href="javascript:;" onclick="schoolCourse.pagination.turnPage('+');">下一页</a> 
+									 <a href="javascript:;" onclick="schoolCourse.pagination.turnPage('end');"> 末页 </a>
+								<!-- </ul> -->
+						        </div>
+						    </div>
+						</div> 
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <!--<a href="#" class="myfile"><i class="fa fa-envelope-open-o"></i>我的文件柜<i class="fa fa-arrow-right rt" style=""></i></a>-->
+                <div class="calendar top" style="">
+                    <div id="calendar"></div>
+                </div>
+                <div class="remind">
+                    <div class="title">我的活动记录</div>
+                    <div id ="activity">
+                    </div>
+                   <!--   <div class='more'><a  >查看更多</a></div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="searchcon" class="hide"></div>
+   
+	<link rel="stylesheet" type="text/css" href="/res/app/wlxt/css/table.css?v=228">
+
+    <!--返回顶部-->
+    <div class="right_btn ">
+        <div id="goTopBtn" class="goTopBtn"></div>
+        <div class="erweima">
+            <div class="codedee">
+                <div class="right-triangle"></div>
+                <div class="code-img"><img src="/res/app/wlxt/img/jiaowu-erweima.png"></div>
+                <p class="zizizi">教务处官方微信公众号</p>
+            </div>
+        </div>
+    </div>
+ <div class="footer" style="">
+    <div class="w clearfix">
+        <div class="left">Copyrights 2001-2025&nbsp;&nbsp;清华大学版权所有</div>
+        <div class="right"><a  href="" id="emailHref">问题反馈邮箱 ：learn2018<img src="/res/images/emailpic1.png" style="width: 16px;height: 16px;vertical-align:middle">tsinghua.edu.cn</a>&nbsp;&nbsp;&nbsp;&nbsp;服务热线 : 62788122&nbsp;,&nbsp;62792959</div>
+</div>
+<script>
+function goTopEx() {
+    var obj = document.getElementById("goTopBtn");
+
+
+    function getScrollTop() {
+        return document.documentElement.scrollTop + document.body.scrollTop;
+    }
+    function setScrollTop(value) {
+        if (document.documentElement.scrollTop) {
+            document.documentElement.scrollTop = value;
+        } else {
+            document.body.scrollTop = value;
+        }
+    }
+
+
+    window.onscroll = function() {
+
+        // console.log($(this))
+            var h = window.innerHeight;//div可视区域的高度
+            var sh = document.body.scrollHeight;//滚动的高度
+            var st = window.document.documentElement.scrollTop + document.body.scrollTop;//滚动条的高度，即滚动条的当前位置到div顶部的距离
+            if(h+st>=sh-60){
+                // console.log("滑到底部了");
+                $('.right_btn').addClass('abs')
+            }else{
+                $('.right_btn').removeClass('abs')
+            }
+        getScrollTop() > 100 ? obj.style.display = "block": obj.style.display = "none";
+    };
+    obj.onclick = function() {
+        var goTop = setInterval(scrollMove, 10);
+        function scrollMove() {
+            setScrollTop(getScrollTop() / 1.1);
+            if (getScrollTop() < 1) clearInterval(goTop);
+        }
+    }
+}
+      goTopEx();
+
+$("#emailHref").click(function () {
+    var strArray = ["learn2018","@","tsinghua.edu.cn"];
+    var str = "mailto:";
+    for(var i =0;i<strArray.length;i++){
+        str+=strArray[i];
+    }
+    $(this).attr("href",str);
+});
+</script>
+</body>
+
+</html>
+<script type="text/html" id="tablist">
+</script>
+<script type="text/javascript" src="/res/app/wlxt/js/plugin/qtip.js?v=228"></script>
+<script type="text/javascript" src="/res/app/wlxt/js/plugin/template.js?v=228"></script>
+<script type="text/javascript" src="/res/app/wlxt/js/plugin/select2/select2.js?v=228"></script>
+<script src="/res/ui/plugins/showLoading/showLoading.min.js?v=228" type="text/javascript"></script>
+<script src="/res/js/common/utils.js?v=228"></script>
+<script src="/res/js/common/dataTablePlugin.js?v=228"></script>
+  <script type="text/javascript" src="/res/app/wlxt/js/gl.js?v=228"></script>
+<script type="text/javascript" src="/res/app/wlxt/js/plugin/zeroModal/zeroModal.js?v=228"></script>
+<script src="/res/js/common/myApp.js?v=228"></script>  
+<script type="text/javascript" language="javascript" src="/res/app/wlxt/js/plugin/datatable/jquery.dataTables.js?v=228"></script>
+<script type="text/javascript" src="/res/app/wlxt/js/plugin/pagination/jquery.pagination.js?v=228"></script>
+<script src="/res/ui/plugins/ajaxFileUpload/ajaxfileupload.js?v=228" type="text/javascript"></script>
+<script type="text/javascript" language="javascript" src="/res/app/wlxt/js/plugin/select2/select2.js?v=228"></script>
+<script src="/res/app/wlxt/js/plugin/upload-cropper/amazeui.min.js?v=228" charset="utf-8"></script>
+<script src="/res/app/wlxt/js/plugin/upload-cropper/cropper.min.js?v=228" charset="utf-8"></script>
+<script src="/res/app/wlxt/js/plugin/upload-cropper/mycropper_img.js?v=228" ></script>
+<script type="text/javascript" src="/res/app/wlxt/js/common.js?v=228"></script>
+<script type="text/javascript" src="/res/app/wlxt/js/play.js?v=228"></script>
+ <script type="text/javascript" src="/res/js/wlxt/kc/kc/student/courseList.js?v=228"></script>
+   	<script type="text/javascript" src="/res/js/wlxt/kc/kc/student/schooleandGlobacourse.js?v=228"></script>
+<!-- 小日历js -->
+<script src="/res/app/wlxt/js/plugin/migrate/jquery-migrate-1.4.1.min.js?v=228"></script>
+<script src="/res/app/wlxt/js/plugin/moment/moment.min.js?v=228"></script>
+
+<script src="/res/js/wlxt/calendar/config.js?v=228" type="text/javascript"></script>
+<script src="/res/js/wlxt/calendar/calendar.js?v=228" type="text/javascript"></script>
+<script  type="text/javascript" src="/res/app/wlxt/js/plugin/migrate/jquery-migrate-1.4.1.min.js?v=228"></script>
+
+
+
+
+<style>
+ #calendar [class*="webicon-"]{color:#fff;font-size:14px;}
+</style>
+<script type="text/javaScript">
+function DateLinkMapping(date, link, title, type,source) {
+    this.Date = date;
+    this.Link = link;
+    this.Title = title;
+    this.Type = type;
+    this.source = source;//来源zhjw或calendar
+}
+var MiniCalendar = {
+    settings: {
+        firstDayOfWeek: 1,
+        baseClass: "calendarwraper",
+        curDayClass: "curDay",
+        oldDayClass:"oldDay",
+        prevMonthCellClass: "prevMonth",
+        nextMonthCellClass: "nextMonth",
+        curMonthNormalCellClass: "normalDay",
+        prevNextMonthDaysVisible: true,
+        mapsCellClass: "squ"
+    },
+    containerId: "",
+    weekDayNames: [],
+    dateLinkMappings: [],
+    Multiple: false, // 同一个日期显示多个事件
+    monthNames: ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "十一", "十二"],
+    currentDate : new Date(),
+    Init: function(weekDayNames, dateLinkMappings, multiple, settings) {
+        if (!weekDayNames || weekDayNames.length && weekDayNames.length != 7) {
+            this.weekDayNames[1] = "一";
+            this.weekDayNames[2] = "二";
+            this.weekDayNames[3] = "三";
+            this.weekDayNames[4] = "四";
+            this.weekDayNames[5] = "五";
+            this.weekDayNames[6] = "六";
+            this.weekDayNames[7] = "日";
+        } else {
+            this.weekDayNames = weekDayNames;
+        }
+        if (dateLinkMappings) {
+            this.dateLinkMappings = dateLinkMappings;
+        }
+        if (multiple) {
+            this.Multiple = multiple
+        }
+
+    },
+    Add: function(dateLinkMappings) {
+        if (dateLinkMappings) {
+            this.dateLinkMappings = this.dateLinkMappings.concat(dateLinkMappings);
+        }
+    },
+    RenderCalendar: function(divId, month, year) {
+        this.containerId = divId;
+        this.currentDate = new Date(year, month - 1, 1);
+        var ht = [];
+
+        // ht.push("<table class='", this.settings.baseClass, " tr_3' cellspacing='0' cellpadding='0' border='0'>");
+        ht.push(this._RenderTitle(month, year));
+
+        ht.push("<div class='tr_5'>", this._RenderBody(month, year), "</div>");
+        ht.push("</table>");
+
+        document.getElementById(divId).innerHTML = ht.join("");
+        this._InitEvent(divId, month, year);
+    },
+    _RenderTitle: function(month, year) {
+        var ht = [];
+        //日期
+        //ht.push("<tr>");
+        //ht.push("<div class='tr_2'>",year,"<i></i></div><div class='tr_3'><div class='corl'><a class='b1' id='", this.containerId, "_prevMonth' title='上一月'></a><a  class='b2' id='", this.containerId, "_nextMonth' title='下一月'></a><span class='yahei'>", this.monthNames[month-1], "月</span></div>");
+        //ht.push('<h3 class="clearfix"><div class="right"> <a class="icon-angle-left" id="', this.containerId, '_prevMonth"></a> <span>', year, ' ', this.monthNames[month - 1], '月</span> <a class="icon-angle-right"  id="', this.containerId, '_nextMonth"></a> </div><span class="calendarname">本月活动</span></h3>');
+        // ht.push("</tr>");
+        //星期
+
+        ht.push('<h3 class="clearfix"><div class="center"> <a class="webicon-turnleft" id="', this.containerId, '_prevMonth"></a> <span>', year,"年" + ' ', this.monthNames[month - 1], '月</span> <a class="webicon-turnright"  id="', this.containerId, '_nextMonth"></a> </div></h3>');
+        ht.push("<table cellspacing='0' cellpadding='0' border='0'><tr>");
+        for (var i = 0; i < 7; i++) {
+            var day = (i + this.settings.firstDayOfWeek) == 7 ? 7 : (i + this.settings.firstDayOfWeek) % 7;
+            ht.push("<th>", this.weekDayNames[day], "</th>")
+        }
+        ht.push("</tr></table>");
+        return ht.join("");
+    },
+    _RenderBody: function(month, year) {
+        var date = new Date(year, month - 1, 1);
+        var day = date.getDay();
+        var dayOfMonth = 1;
+        var daysOfPrevMonth = (7 - this.settings.firstDayOfWeek + day) % 7;
+        var totalDays = this._GetTotalDays(month, year);
+        var totalDaysOfPrevMonth = this._GetToalDaysOfPrevMonth(month, year);
+        var ht = [];
+        var curDate;
+        ht.push("<table class='", this.settings.baseClass, "' cellspacing='0' cellpadding='0' border='0'>");
+        for (var i = 0;; i++) {
+            curDate = null;
+            if (i % 7 == 0) { //新起一行
+                ht.push("<tr>");
+            }
+            ht.push("<td");
+            //debugger;
+            if (i >= daysOfPrevMonth && dayOfMonth <= totalDays) { //本月
+                curDate = new Date(year, month - 1, dayOfMonth);
+                if (Date.parse(new Date().toDateString()) - Date.parse(curDate) == 0) {
+                    ht.push(" class='", this.settings.curDayClass, "'");
+                } 
+                else if(Date.parse(new Date().toDateString()) - Date.parse(curDate) > 0){
+                    ht.push(" class='", this.settings.oldDayClass, "'");
+                }
+                else{
+                    ht.push(" class='", this.settings.curMonthNormalCellClass, "'");
+                }
+                //ht.push(" style='position: absolute;'");
+                dayOfMonth++;
+
+            }
+            /*
+            else if (i < daysOfPrevMonth) {//上月
+                if (this.settings.prevNextMonthDaysVisible) {
+                    var prevMonth = month;
+                    var prevYear = year;
+                    if (month == 1) {
+                        prevMonth = 12;
+                        prevYear = prevYear - 1;
+                    }
+                    else {
+                        prevMonth = prevMonth - 1;
+                    }
+                    curDate = new Date(prevYear, prevMonth - 1, totalDaysOfPrevMonth - (daysOfPrevMonth - i - 1));
+
+                    ht.push(" class='", this.settings.prevMonthCellClass, "'");
+                }
+            }
+            else {//下月
+                if (this.settings.prevNextMonthDaysVisible) {
+                    var nextMonth = month;
+                    var nextYear = year;
+                    if (month == 12) {
+                        nextMonth = 1;
+                        nextYear = prevYear + 1;
+                    }
+                    else {
+                        nextMonth = nextMonth + 1;
+                    }
+                    curDate = new Date(nextYear, nextMonth - 1, i - dayOfMonth - daysOfPrevMonth + 2);
+                    ht.push(" class='", this.settings.nextMonthCellClass, "'");
+                }
+            }
+            
+            */
+            ht.push(">");
+            ht.push(this._BuildCell(curDate));
+            ht.push("</td>");
+            if (i % 7 == 6) { //结束一行
+                ht.push("</tr>");
+            }
+            if (i % 7 == 6 && dayOfMonth - 1 >= totalDays) {
+                break;
+            }
+        }
+        return ht.join("");
+    },
+    _BuildCell: function(curDate) {
+        var ht = [],
+            hasitem = false,
+            pushdate = false;
+        if (curDate) {
+        	var all_cell_titles  = [];
+            for (var j = 0; j < this.dateLinkMappings.length; j++) {
+                if (this.parseISO8601(this.dateLinkMappings[j].Date) - curDate == 0) {
+                    hasitem = true;
+                    if (this.Multiple) {
+                        if (!pushdate) {
+                            ht.push("<a class='date'>", curDate.getDate(), "</a><div class='eventwrapper clearfix'>");
+                            pushdate = true
+                        }
+                        ht.push("<a target='_blank'  rel='noopener noreferrer'  class='tinydot ", this.dateLinkMappings[j].Type, "' href='", this.dateLinkMappings[j].Link, "' title='", this.dateLinkMappings[j].Title, "'></a>");
+                    } else {
+                    	if(all_cell_titles.indexOf(this.dateLinkMappings[j].Title) == -1){
+                    		all_cell_titles.push(this.dateLinkMappings[j].Title);
+                    	}
+                        //ht.push("<a target='_blank'  rel='noopener noreferrer'  class='", this.dateLinkMappings[j].Type, "' href='", this.dateLinkMappings[j].Link, "' title='", all_cell_title, "'>", curDate.getDate(), "</a>");
+                        //break;
+                    }
+                }
+
+            }
+            for (var j = 0; j < this.dateLinkMappings.length; j++) {
+                if (this.parseISO8601(this.dateLinkMappings[j].Date) - curDate == 0) {
+                    hasitem = true;
+                    if (this.Multiple) {
+                        if (!pushdate) {
+                            ht.push("<a class='date'>", curDate.getDate(), "</a><div class='eventwrapper clearfix'>");
+                            pushdate = true
+                        }
+                        ht.push("<a target='_blank'  rel='noopener noreferrer'  class='tinydot ", this.dateLinkMappings[j].Type, "' href='", this.dateLinkMappings[j].Link, "' title='", this.dateLinkMappings[j].Title, "'></a>");
+                    } else {
+                        ht.push("<a target='_blank'  rel='noopener noreferrer'  class='", this.dateLinkMappings[j].Type, "' href='", this.dateLinkMappings[j].Link, "' title='", all_cell_titles.join("<br/>"), "'>", curDate.getDate(), "</a>");
+                        break;
+                    }
+                }
+
+            }
+            if (this.Multiple) { ht.push("</div>"); }
+            if (!hasitem) {
+                ht.push("<a class='date'>", curDate.getDate(), "</a>");
+            }
+        } else {
+            ht.push("&nbsp;");
+        }
+        return ht.join("");
+    },
+    _InitEvent: function(divId, month, year) {
+        var t = this;
+        document.getElementById(this.containerId + "_prevMonth").style.cursor = "pointer";
+        document.getElementById(this.containerId + "_nextMonth").style.cursor = "pointer";
+        document.getElementById(this.containerId + "_prevMonth").onclick = function() {
+            if (month == 1) {
+                month = 12;
+                year = year - 1;
+            } else {
+                month = month - 1;
+            }
+
+            t.RenderCalendar(divId, month, year);
+            //从后台加载数据并渲染
+            previousAndNextMonth(year,month);
+        };
+        document.getElementById(this.containerId + "_nextMonth").onclick = function() {
+            if (month == 12) {
+                month = 1;
+                year = year + 1;
+            } else {
+                month = month + 1;
+            }
+
+            t.RenderCalendar(divId, month, year);
+          	//从后台加载数据并渲染
+            previousAndNextMonth(year,month);
+        };
+    },
+    //计算指定月的总天数
+    _GetTotalDays: function(month, year) {
+        if (month == 2) {
+            if (this._IsLeapYear(year)) {
+                return 29;
+            } else {
+                return 28;
+            }
+        } else if (month == 4 || month == 6 || month == 9 || month == 11) {
+            return 30;
+        } else {
+            return 31;
+        }
+    },
+    _GetToalDaysOfPrevMonth: function(month, year) {
+        if (month == 1) {
+            month = 12;
+            year = year - 1;
+        } else {
+            month = month - 1;
+        }
+        return this._GetTotalDays(month, year);
+    },
+    //判断是否是闰年
+    _IsLeapYear: function(year) {
+        return year % 400 == 0 || (year % 4 == 0 && year % 100 != 0);
+    },
+
+    parseISO8601: function(dateStringInRange) {
+        var isoExp = /^\s*(\d{4})-(\d\d)-(\d\d)\s*$/,
+            date = new Date(NaN),
+            month,
+            parts = isoExp.exec(dateStringInRange);
+
+        if (parts) {
+            month = +parts[2];
+            date.setFullYear(parts[1], month - 1, parts[3]);
+            if (month != date.getMonth() + 1) {
+                date.setTime(NaN);
+            }
+        }
+        return date;
+    }
+
+};
+
+
+/**
+ *   To 20130308 -> 2013/03/08
+ */
+function changeDateFormate(dateText) {
+    if (dateText.indexOf('-') != -1) {
+        return dateText.split('-').join("");
+    }
+    return dateText.substring(0, 4) + dateText.substring(4, 6) + dateText.substring(6, 8);
+
+}
+// 对Date的扩展，将 Date 转化为指定格式的String   
+// 月(M)、日(d)、小时(h)、分(m)、秒(s)、季度(q) 可以用 1-2 个占位符，   
+// 年(y)可以用 1-4 个占位符，毫秒(S)只能用 1 个占位符(是 1-3 位的数字)   
+// 例子：   
+// (new Date()).Format("yyyy-MM-dd hh:mm:ss.S") ==> 2006-07-02 08:09:04.423   
+// (new Date()).Format("yyyy-M-d h:m:s.S")      ==> 2006-7-2 8:9:4.18   
+Date.prototype.Format = function(fmt) { //author: meizz   
+    var o = {
+        "M+": this.getMonth() + 1, //月份   
+        "d+": this.getDate(), //日   
+        "h+": this.getHours(), //小时   
+        "m+": this.getMinutes(), //分   
+        "s+": this.getSeconds(), //秒   
+        "q+": Math.floor((this.getMonth() + 3) / 3), //季度   
+        "S": this.getMilliseconds() //毫秒   
+    };
+    if (/(y+)/.test(fmt))
+        fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+    for (var k in o)
+        if (new RegExp("(" + k + ")").test(fmt))
+            fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+    return fmt;
+}
+
+$(function() {
+    var date = new Date();
+    var mapping = [];
+    MiniCalendar.Init(null, mapping);
+    MiniCalendar.RenderCalendar("calendar", date.getMonth() + 1, date.getFullYear());
+    
+    if ( $.browser.msie && ($.browser.version == "8.0" || $.browser.version == "7.0" || $.browser.version == "6.0")) {
+		alert("日历功能需要IE9+/Chrome/火狐/Safari等现代浏览器。");
+	}else{
+		roam(getMutilCal);
+		roam(getDelegationUrls);
+		if(zhjw_base_url){
+		    $.post("/b/wlxt/common/auth/gnt",{appId:"ALL_ZHJW"},function(data){
+				$("body").append(
+								"<iframe id='pre_roam_frame'"
+								+ " src='"+zhjw_base_url+"/j_acegi_login.do?url=/&ticket="+data+"'"
+								+ " onload='get_events_from_zhjw(null,null)' width='0' height='0' marginwidth='0' marginheight='0' frameborder='no'></iframe>");
+
+			}); 
+		}
+
+  		 
+
+	}
+    
+    
+    /*$.ajax({
+        //type:'post',
+        dataType: 'jsonp', // 此处必须要为jsonp,jsonp解决跨域使用的
+        data: null,
+        type: "get",
+        async: false,
+        url: "http://career.cic.tsinghua.edu.cn/xsglxt/b/jyxt/anony/jrqzph",
+        success: function(json) {
+            var today = new Date();
+            var flag = 0;
+            for (var i = 0; i < json.length; i++) {
+                if (json[i].qsrq == today) {
+                    flag = 1;
+                }
+                //mapping.push(new DateLinkMapping(json[i].qsrq, "javascript:displayEventAnyday(\"" + json[i].qsrq + "\");", json[i].zphmc, "yellow"));
+                mapping.push(new DateLinkMapping(json[i].qsrq, "/f/wlxt/calendar/teacher/view", json[i].zphmc, "yellow"));
+            }
+            if (flag == 0) {
+                //mapping.push(new DateLinkMapping(today, "javascript:displayEventAnyday(\"" + today + "\");", "", ""));
+            	//mapping.push(new DateLinkMapping(today, "/f/wlxt/calendar/teacher/view", "", ""));
+            }
+            //mapping.push(new DateLinkMapping("2016-07-20", "piaoWuZX_hdxq.html","朱宗庆打击乐团儿童音乐会《豆荚宝宝 彩虹梦境》（下午、晚上各一场）朱宗庆打击乐团儿童音乐会《豆荚宝宝 彩虹梦境》（下午、晚上各一场）","yellow"));
+            //mapping.push(new DateLinkMapping("2016-07-30", "piaoWuZX_hdxq.html","朱宗庆打击乐团儿童音乐会《豆荚宝宝 彩虹梦境》（下午、晚上各一场）","blue"));
+            MiniCalendar.Init(null, mapping);
+            MiniCalendar.RenderCalendar("calendar", date.getMonth() + 1, date.getFullYear());
+            
+        }
+    });*/
+    
+    
+    
+    
+    $('.calendar').delegate("a[title]", 'mouseenter', function(event) {
+        $(this).qtip({
+            overwrite: false, // Don't overwrite tooltips already bound
+            show: {
+                event: event.type, // Use the same event type as above
+                ready: true // Show immediately - important!
+            },
+            content: {
+                html: event.currentTarget.title,
+               
+            },
+            position: {
+                my: 'top center',
+                at: 'bottom center'
+            },
+            style: { classes: 'qtip-box qtip-shadow' }
+        });
+    });
+
+
+});
+
+
+
+
+
+
+function displayEventAnyday(param) {
+    debugger;
+    /*$.ajax({
+        //type:'post',
+        //dataType:'jsonp',     //接受数据格式    
+        dataType: 'jsonp', // 此处必须要为jsonp,jsonp解决跨域使用的
+        data: null,
+        type: "get",
+        async: false,
+        timeout: 30000,
+        url: "http://career.cic.tsinghua.edu.cn/xsglxt/b/jyxt/anony/queryTodayHdList?rq=" + changeDateFormate(param),
+        success: function(json) {
+            if (json == "" || json == null) { //showtMessage
+                $(".popcontent").html("<h2>" + param + " 活动</h2><div class='wrapper'><div class='item'><div class='time' style='color:black;'>暂无活动信息！</div>");
+            } else {
+                var htmlStr = "<h2>" + param + " 活动</h2><div class='wrapper'>";
+                var hdrlList = json;
+                var today = new Date().Format("yyyyMMdd");
+                for (var i = 0; i < json.length; i++) {
+                    var strTemp = hdrlList[i];
+                    if (strTemp.fblx == '日历') {
+                        htmlStr = htmlStr + "<div class='item'><div class='time'><i class='icon-clock-o'></i>" + strTemp.kssj; //+" - "+changeTime(strTemp.jssj)
+                        if (null != strTemp.cdmcqc) {
+                            htmlStr = htmlStr + "    地点:" + strTemp.cdmcqc;
+                        }
+                        htmlStr = htmlStr + "</div><ul class='timelist'><li><a href='" + strTemp.url + "' target='_blank'  rel='noopener noreferrer' >" + strTemp.bt + "</a></li></ul></div>"
+                    } else if (strTemp.fblx == '专场') {
+                        htmlStr = htmlStr + "<div class='item'><div class='time'><i class='icon-clock-o'></i>" + strTemp.kssj; //+" - "+changeTime(strTemp.jssj)
+                        if (null != strTemp.cdmcqc) {
+                            htmlStr = htmlStr + "    地点:" + strTemp.cdmcqc;
+                        }
+                        if (strTemp.sfzb == '是') {
+                            htmlStr += '<a class="live" href="http://www.tsinghua.edu.cn/publish/career/8163/index.html" target="_blank"  rel="noopener noreferrer" ><img src="/publish/career/images/live.jpg" width="20" height="14" class="liveimg"></a>';
+                        }
+                        if (strTemp.rq >= today) {
+                            htmlStr = htmlStr + "&nbsp;&nbsp;<input type='button' style='border: 0 none;padding: -10px -10px;cursor:pointer;background: #e8714d none repeat scroll 0 0;font-size: 10px;color:white;' onclick='doYy(" + strTemp.zphid + ",\"" + strTemp.sjd + "\"," + strTemp.cddm + ",\"专场\");' value='预约' />";
+                        }
+                        htmlStr = htmlStr + "</div><ul class='timelist'><li><a href='http://career.cic.tsinghua.edu.cn/xsglxt/f/jyxt/anony/gotoZpxxList?id=" + strTemp.zphid + "' target='_blank'  rel='noopener noreferrer' >" + strTemp.bt + "</a></li></ul></div>"
+                    } else {
+                        htmlStr = htmlStr + "<div class='item'><div class='time'><i class='icon-clock-o'></i>" + strTemp.kssj; //+" - "+changeTime(strTemp.jssj)
+                        if (null != strTemp.cdmcqc) {
+                            htmlStr = htmlStr + "    地点:" + strTemp.cdmcqc;
+                        }
+                        if (strTemp.rq >= today) {
+                            htmlStr = htmlStr + "&nbsp;&nbsp;<input type='button' style='border: 0 none;padding: -10px -10px;cursor:pointer;background: #e8714d none repeat scroll 0 0;font-size: 10px;color:white;' onclick='doYy(" + strTemp.zphid + ",\"\",\"\",\"大中型\");' value='预约' />";
+                        }
+                        htmlStr = htmlStr + "</div><ul class='timelist'><li><a href='http://career.cic.tsinghua.edu.cn/xsglxt/f/jyxt/anony/dzxDetails?zphid=" + strTemp.zphid + "' target='_blank'  rel='noopener noreferrer' >" + strTemp.bt + "</a></li></ul></div>"
+                    }
+                }
+                htmlStr = htmlStr + "</div>";
+                $(".popcontent").html(htmlStr);
+            }
+        }
+    });*/
+    /*$('.calendar a[title]').live('mouseenter', function(event) {debugger;
+        $(this).qtip({
+            overwrite: false, // Don't overwrite tooltips already bound
+            show: {
+                event: event.type, // Use the same event type as above
+                ready: true // Show immediately - important!
+            },
+            position: {
+                my: 'top left',
+                at: 'top center'
+            },
+            style: { classes: 'qtip-dark' }
+        });
+    });*/
+    $(".masklayer").show();
+    $(".pop").fadeIn("fast");
+    $("body").css("overflow", "hidden");
+}
+
+
+
+
+
+
+
+
+/*----------以上为禹明君代码----------以下为马尔东代码----------*/
+
+
+
+
+
+
+
+
+
+
+//首页日历设置
+var calendarTypes = {All:"all",Course:"course",Homework:"homework",Exam:"exam",Default:"default"};
+var wlxtCalGlobal = {currentUserId:"", userAuth:{userName : null, userPassword : null}, personalCalendarUrls : [], delegatedCalendarUrls:[],calendarUrlsCompleted:{pWrite:false,dRead:new Boolean(false),dWrite:new Boolean(false)}};
+var inputUID = "";
+var loadDefaultCalUID = "";
+var eduWeekStartPoints = {};
+var role = "bks";
+var roleEn = "student";//此参数基于url
+var url_pattern = new RegExp("\/teacher\\b");
+if(url_pattern.test(location.pathname)){
+	roleEn = "teacher";
+}
+
+
+
+
+
+
+/*****************************************************
+* 从教务读取课程和调课数据
+*****************************************************/
+
+function get_events_from_zhjw(startDate,endDate){
+	get_personal_events_from_zhjw(startDate,endDate);
+	get_tk_events_from_zhjw(startDate,endDate);
+}
+
+function get_personal_events_from_zhjw(startDate,endDate){
+	if(startDate == null || endDate == null){
+		startDate = new Date();
+		startDate.setDate(1);
+		
+		endDate = new Date();
+		endDate.setDate(1);
+	} 
+ 	startDate.setHours(0,0,0,0);
+	endDate.setHours(0,0,0,0);
+ 	
+	startDate.setMonth(startDate.getMonth()-1);
+	endDate.setMonth(endDate.getMonth()+1);
+ 	
+	var startDateStr = moment(startDate).format('YYYYMMDD');
+	var endDateStr = moment(endDate).format('YYYYMMDD');
+	
+	
+	
+	if(role != ""){
+		var zhjwUrl = zhjw_base_url+'/jxmh_out.do?m='+role+'_jxrl_all&p_start_date='+startDateStr+'&p_end_date='+endDateStr;
+		
+		$.ajax({
+			type : 'GET',
+			url : zhjwUrl,
+			dataType : 'jsonp',
+			jsonp : 'jsoncallback',
+			jsonpCallback : 'no_such_method',
+			success : function(data) {
+				var mappings = [];
+				var date = new Date();
+				//var data = [{"dd":"三教","fl":"上课","grrlID":0,"jssj":"21:45","kssj":"19:20","nq":"2018-07-03","nr":"基于Linux的C++","sfSjtz":"是","skjc":"6","sm":""},{"dd":"三教","fl":"上课","grrlID":0,"jssj":"21:45","kssj":"19:20","nq":"2018-07-03","nr":"基于Linux的C++","sfSjtz":"是","skjc":"6","sm":""},{"dd":"三教","fl":"上课","grrlID":0,"jssj":"21:45","kssj":"19:20","nq":"2018-07-12","nr":"基于Linux的C++","sfSjtz":"","skjc":"6","sm":""},{"dd":"三教","fl":"上课","grrlID":0,"jssj":"21:45","kssj":"19:20","nq":"2018-05-12","nr":"基于Linux的C++","sfSjtz":"","skjc":"6","sm":""},{"dd":"三教","fl":"上课","grrlID":0,"jssj":"21:45","kssj":"19:20","nq":"2018-05-19","nr":"基于Linux的C++","sfSjtz":"","skjc":"6","sm":""},{"dd":"三教","fl":"上课","grrlID":0,"jssj":"21:45","kssj":"19:20","nq":"2018-05-19","nr":"基于Linux的C++","sfSjtz":"","skjc":"6","sm":""},{"dd":"三教","fl":"上课","grrlID":0,"jssj":"21:45","kssj":"19:20","nq":"2018-05-26","nr":"基于Linux的C++","sfSjtz":"","skjc":"6","sm":""},{"dd":"三教","fl":"上课","grrlID":0,"jssj":"21:45","kssj":"19:20","nq":"2018-05-26","nr":"基于Linux的C++","sfSjtz":"","skjc":"6","sm":""},{"dd":"三教","fl":"上课","grrlID":0,"jssj":"21:45","kssj":"19:20","nq":"2018-06-02","nr":"基于Linux的C++","sfSjtz":"","skjc":"6","sm":""},{"dd":"三教","fl":"上课","grrlID":0,"jssj":"21:45","kssj":"19:20","nq":"2018-06-02","nr":"基于Linux的C++","sfSjtz":"","skjc":"6","sm":""},{"dd":"三教","fl":"上课","grrlID":0,"jssj":"21:45","kssj":"19:20","nq":"2018-06-09","nr":"基于Linux的C++","sfSjtz":"","skjc":"6","sm":""},{"dd":"三教","fl":"上课","grrlID":0,"jssj":"21:45","kssj":"19:20","nq":"2018-06-09","nr":"基于Linux的C++","sfSjtz":"","skjc":"6","sm":""},{"dd":"三教","fl":"上课","grrlID":0,"jssj":"21:45","kssj":"19:20","nq":"2018-06-16","nr":"基于Linux的C++","sfSjtz":"","skjc":"6","sm":""},{"dd":"三教","fl":"上课","grrlID":0,"jssj":"21:45","kssj":"19:20","nq":"2018-06-16","nr":"基于Linux的C++","sfSjtz":"","skjc":"6","sm":""}];
+				for (var i = 0; i < data.length; i++) {
+	                mappings.push(new DateLinkMapping(data[i].nq, "/f/wlxt/calendar/"+roleEn+"/view", data[i].nr, "yellow","zhjw"));
+	            }
+				MiniCalendar.Add(mappings);
+				
+	            MiniCalendar.RenderCalendar("calendar", MiniCalendar.currentDate.getMonth()+1, MiniCalendar.currentDate.getFullYear());
+				
+				
+			},
+			error : function(jqXHR, textStatus, errorThrown ) {
+				//alert(e.message);
+			},
+			complete : function( jqXHR, textStatus) {
+				$("#pre_roam_frame").remove();
+			}
+		});
+	}
+
+	
+}
+
+
+
+
+
+//调课事件
+function get_tk_events_from_zhjw(startDate,endDate){
+	if(startDate == null || endDate == null){
+		startDate = new Date();
+		startDate.setDate(1);
+		
+		endDate = new Date();
+		endDate.setDate(1);
+	} 
+ 	startDate.setHours(0,0,0,0);
+	endDate.setHours(0,0,0,0);
+ 	
+	startDate.setMonth(startDate.getMonth()-1);
+	endDate.setMonth(endDate.getMonth()+1);
+ 	
+	var startDateStr = moment(startDate).format('YYYYMMDD');
+	var endDateStr = moment(endDate).format('YYYYMMDD');
+	
+	if(role != ""){
+		var zhjwUrl = zhjw_base_url+'/jxmh_out.do?m='+role+'_jxrl_all&p_start_date='+startDateStr+'&p_end_date='+endDateStr+'&sjtzb=true';
+		
+		$.ajax({
+			type : 'GET',
+			url : zhjwUrl,
+			dataType : 'jsonp',
+			jsonp : 'jsoncallback',
+			jsonpCallback : 'no_such_method2',
+			success : function(data) {
+				//var data = [{"bz":"微信信息已生成；短信信息已生成；","dddrq":"","id":"放假不补-_@_-2018-06-18","key":"放假不补-_@_-2018-06-18","others":{"condition":"","dateParam1":null,"dateParam2":null,"decimalParam1":0,"decimalParam2":0,"doubleParam1":0,"doubleParam2":0,"intParam1":0,"intParam2":0,"strParam1":"","strParam2":""},"rq":"2018-06-18","sort":{"asc1":true,"asc10":true,"asc2":true,"asc3":true,"asc4":true,"asc5":true,"asc6":true,"asc7":true,"asc8":true,"asc9":true,"p1":"","p10":"","p2":"","p3":"","p4":"","p5":"","p6":"","p7":"","p8":"","p9":""},"tzlx":"放假不补","uploadFileStream":[]}];
+				var mappings = [];
+				var date = new Date();
+				for (var i = 0; i < data.length; i++) {
+	                mappings.push(new DateLinkMapping(data[i].rq, "/f/wlxt/calendar/"+roleEn+"/view", data[i].tzlx, "yellow","zhjw"));
+	            }
+				MiniCalendar.Add(mappings);
+				
+	            MiniCalendar.RenderCalendar("calendar", MiniCalendar.currentDate.getMonth()+1, MiniCalendar.currentDate.getFullYear());
+			},
+			error : function(e) {
+				//alert(e.message);
+			},
+			complete : function( jqXHR, textStatus) {
+				$("#pre_roam_frame").remove();
+			}
+		});
+	}
+
+	
+}
+
+
+/*****************************************************
+* 与日历服务交互
+*****************************************************/
+
+
+
+//漫游到日历服务
+function roam(functionx){
+	//漫游
+	$.post("/b/wlxt/common/auth/gnt",{appId:"RLFW"},function(data){
+		$.ajax({
+			type : 'GET',
+			url : getCalendarRootUrl()+"/roam.php?ticket="+data,
+			data : { xhrFields: {'withCredentials': false}},
+			cache : false,
+			success : function(r_data) {
+				var groups = r_data.match(/<a href='\/'>OK (.*?)<\/a>/);
+				if(groups && groups.length > 0){
+					
+					wlxtCalGlobal.currentUserId = groups[1];
+					wlxtCalGlobal.userAuth.userName = groups[1];
+					wlxtCalGlobal.userAuth.userPassword = groups[1];
+					inputUID = "http://"+groups[1]+"@"+globalNetworkCheckSettings.href.replace(/http:\/\//,"")+groups[1]+"/default/";
+					loadDefaultCalUID = globalNetworkCheckSettings.href+groups[1]+"/default/";			
+					
+					//执行作为参数传入的函数
+					if(functionx) functionx();
+
+				}else{
+					alert("日历服务漫游失败");
+				}
+			},
+			error : function(e) {
+				//alert(e.message);
+			},
+			complete : function( jqXHR, textStatus) {
+				//$("#pre_roam_frame").remove();
+			}
+		});
+
+	});
+	
+}
+
+
+
+function getMutilCal() {
+	// 加载个人日历信息，在callback中再循环加载每个日历集合，见multiCalcompleteCallback
+	Calendar.getMultiCalendars(globalNetworkCheckSettings.href+wlxtCalGlobal.currentUserId+"/",wlxtCalGlobal.userAuth, true,
+	{
+		error : function(objAJAXRequest, strError) {
+			//alert(strError);
+		},
+		complete : function(calendarCollections) {
+			$(calendarCollections).each(function(idx, cal) {
+				if (cal.displayname) {// 只有displayname不为空的calendar才是需要展示的calendar
+					wlxtCalGlobal.personalCalendarUrls.push(cal.href);
+					// 单独加载某个calendar collection							
+					//loadEvent(getCalendarRootUrl() + cal.href);
+				}
+			});
+			wlxtCalGlobal.calendarUrlsCompleted.pWrite = true;
+			if(calendarUrlsAllCompleted()){
+				loadCalByType(calendarTypes.All);
+			}
+			
+		}
+	});
+	
+}
+
+
+function getDelegationUrls(){
+	//加载代理日历的url
+	var customizedCalendarRegExp = new RegExp("/_[0-9a-zA-Z_-]+?_/");//校历或部门日历
+	var calRootUrlGroups = globalNetworkCheckSettings.href.match(RegExp('^(http:\/\/.+)\/.+?/', 'i'));
+	Calendar.getDelegationsFor(calRootUrlGroups[1]+"/principals/"+wlxtCalGlobal.currentUserId,wlxtCalGlobal.userAuth,
+	{
+		error : function(objAJAXRequest, strError) {
+			//alert(strError);
+		},
+		complete : function(delegationUrls) {
+			var tmpDelegationUrlsWrite = jQuery.grep(delegationUrls.write, function( n, i ) {
+				  return customizedCalendarRegExp.test(n);
+			});
+			delegationUrls.write = tmpDelegationUrlsWrite;
+			var tmpDelegationUrlsRead = jQuery.grep(delegationUrls.read, function( n, i ) {
+				  return customizedCalendarRegExp.test(n);
+			});
+			delegationUrls.read = tmpDelegationUrlsRead;
+			if(delegationUrls.write.length > 0){
+				$(delegationUrls.write).each(function(d_idx, dUrl) {
+					var dUserIdGroup = dUrl.match(/\/principals\/(.*?)\//);
+					wlxtCalGlobal.calendarUrlsCompleted.dWrite = 0;
+					Calendar.getMultiCalendars(globalNetworkCheckSettings.href+dUserIdGroup[1]+"/",wlxtCalGlobal.userAuth, true,
+					{
+						error : function(objAJAXRequest, strError) {
+							//alert(strError);
+						},
+						complete : function(calendarCollections) {
+							wlxtCalGlobal.calendarUrlsCompleted.dWrite++;
+							if(wlxtCalGlobal.calendarUrlsCompleted.dWrite == delegationUrls.write.length){
+								wlxtCalGlobal.calendarUrlsCompleted.dWrite = new Boolean(true);
+							}
+							$(calendarCollections).each(function(idx, cal) {
+								if (cal.displayname && customizedCalendarRegExp.test(cal.href)) {// 只有displayname不为空的calendar才是需要展示的calendar
+									wlxtCalGlobal.delegatedCalendarUrls.push(cal.href);
+									// 单独加载某个calendar collection	
+									//loadEvent(website + cal.href);
+								}
+							});
+							if(calendarUrlsAllCompleted()){
+								//$("#add-active").removeClass("gray-button").addClass("red-button").removeAttr("disabled");
+								loadCalByType(calendarTypes.All);
+							}
+						}
+					});
+				});
+			}else{
+				wlxtCalGlobal.calendarUrlsCompleted.dWrite = new Boolean(true);
+			}
+			if(delegationUrls.read.length > 0){
+				$(delegationUrls.read).each(function(d_idx, dUrl) {
+					var dUserIdGroup = dUrl.match(/\/principals\/(.*?)\//);
+					wlxtCalGlobal.calendarUrlsCompleted.dRead = 0;
+					Calendar.getMultiCalendars(globalNetworkCheckSettings.href+dUserIdGroup[1]+"/",wlxtCalGlobal.userAuth, false,
+					{
+						error : function(objAJAXRequest, strError) {
+							//alert(strError);
+						},
+						complete : function(calendarCollections) {
+							wlxtCalGlobal.calendarUrlsCompleted.dRead = wlxtCalGlobal.calendarUrlsCompleted.dRead + 1;
+							if(wlxtCalGlobal.calendarUrlsCompleted.dRead == delegationUrls.read.length){
+								wlxtCalGlobal.calendarUrlsCompleted.dRead = new Boolean(true);
+							}
+							$(calendarCollections).each(function(idx, cal) {
+								if (cal.displayname && customizedCalendarRegExp.test(cal.href)) {// 只有displayname不为空的calendar才是需要展示的calendar
+									wlxtCalGlobal.delegatedCalendarUrls.push(cal.href);
+									// 单独加载某个calendar collection	
+									//loadEvent(website + cal.href);
+								}
+							});
+							if(calendarUrlsAllCompleted()){
+								//$("#add-active").removeClass("gray-button").addClass("red-button").removeAttr("disabled");
+								loadCalByType(calendarTypes.All);
+							}
+						}
+					});
+				});
+			}else{
+				wlxtCalGlobal.calendarUrlsCompleted.dRead = new Boolean(true);
+			}
+			
+		}
+	
+	});
+	
+
+}
+
+
+
+
+//调用miniCalendarEventObject方法把所有calendar对象转换成DateLinkMapping对象
+function getMiniCalEvents(calendars) {
+	var allEvents = [];
+	var m = 0;
+	$.each(calendars, function(i, cal) {
+		//主体事件
+		//如果事件持续超过一天，需要建立多个事件
+/* 		var m_start = moment(cal.event.dtstart);
+		var m_end = moment(cal.event.dtend);
+		var days = m_end.diff(m_start, 'days');
+		if(days > 0){
+			for(var i = 1 ; i < days ; i++){
+				allEvents[m++] = new DateLinkMapping(moment(cal.event.dtstart).add(i,'days').format("YYYY-MM-DD"),"/f/wlxt/calendar/"+roleEn+"/view",cal.event.summary,"yellow","calendar");
+			}
+		} */
+		//如果事件持续超过一天，只在第一天显示事件
+		allEvents[m++] = new DateLinkMapping(moment(cal.event.dtstart).format("YYYY-MM-DD"),"/f/wlxt/calendar/"+roleEn+"/view",cal.event.summary,"yellow","calendar");
+		//可重复事件中的重复事件
+		if(cal.event.events!=null){
+			$.each(cal.event.events, function(m, n){
+				allEvents[m++] = new DateLinkMapping(moment(n.event.dtstart).format("YYYY-MM-DD"),"/f/wlxt/calendar/"+roleEn+"/view",n.event.summary,"yellow","calendar");
+			});
+		}
+	});
+	return allEvents;
+}
+
+
+
+
+
+
+
+//重新加载日历事件
+function loadEvent(calurl) {
+	//得到当前页面显示的日期范围（以月为单位），只加载日历当前显示的月份的事件
+	var calDate = MiniCalendar.currentDate;
+	var monthStart = new Date(calDate.getFullYear(),calDate.getMonth()-1,1,4,0,0,0);
+	var monthEnd = new Date(calDate.getFullYear(),calDate.getMonth()+2,1,4,0,0,0);
+	if(calurl.match(/__school_calendar__/)){//如果是校历，则要以当前月为准，取前后半年的数据。这主要是用于计算教学周。
+		monthStart.setFullYear(calDate.getFullYear(),calDate.getMonth()-6,1);
+		monthEnd.setFullYear(calDate.getFullYear(),calDate.getMonth()+7,1);
+	}else{//一般情况只取前月、本月和下月的。因为本月视图中包含上月末和下月初的几个框，这样这部分框中才能有数据。
+		monthStart.setFullYear(calDate.getFullYear(),calDate.getMonth()-1,1);
+		monthEnd.setFullYear(calDate.getFullYear(),calDate.getMonth()+2,1);
+	}
+	monthStart.setHours(4,0,0,0);
+	monthEnd.setHours(4,0,0,0);
+	Calendar.queryComponent(calurl,wlxtCalGlobal.userAuth,ComponentTypes.Event,monthStart,monthEnd,
+	{
+		complete : function(calendars) {	
+			var cal_events = getMiniCalEvents(calendars);
+			MiniCalendar.Add(cal_events);
+			MiniCalendar.RenderCalendar("calendar", MiniCalendar.currentDate.getMonth() + 1, MiniCalendar.currentDate.getFullYear());
+		},
+		error : function(objAJAXRequest, strError) {
+			//alert(strError);
+		}
+	});
+}
+
+
+//按类型加载日历
+function loadCalByType(type) {
+	if ( $.browser.msie && ($.browser.version == "8.0" || $.browser.version == "7.0" || $.browser.version == "6.0")) {
+		alert("日历功能需要IE9+/Chrome/火狐/Safari等现代浏览器。");
+		return;
+	}
+	if(calendarUrlsAllCompleted()){
+		// 拼url
+		var tmp = globalNetworkCheckSettings.href.match(RegExp('^(http:\/\/.+?)\/.*', 'i'));
+		var website = tmp[1];
+		var urls = [];
+		
+		if(calendarTypes.All == type){
+			//删除从日历服务加载的事件，保留综合教务事件
+			var events = MiniCalendar.dateLinkMappings;
+			var new_events = [];
+			for (var i = 0; i < events.length; i++) {
+			    if("zhjw" == events[i].source){
+			    	new_events.push(events[i]);
+			    }
+			}
+			MiniCalendar.dateLinkMappings = new_events;
+			//设置Url
+			urls = urls.concat(wlxtCalGlobal.personalCalendarUrls,wlxtCalGlobal.delegatedCalendarUrls);
+		}else{
+			//设置Url
+			urls = wlxtCalGlobal.personalCalendarUrls;
+		}
+
+		$(urls).each(function(idx, url) {
+			// 单独加载某个calendar collection
+			if(calendarTypes.All != type){
+				var typeRegExp = new RegExp("\/"+type+"\/?");
+				if(url.match(typeRegExp)){
+					loadEvent(website + url);
+				}
+			}else{
+				if(url.match(/\/default\//)){//个人日历和校历
+					loadEvent(website + url);
+				}
+			}
+
+		});
+	}else{
+		//alert("日历加载中，请稍等后再点击此按钮/链接。");
+	}
+
+}
+
+function calendarUrlsAllCompleted(){
+	return wlxtCalGlobal.calendarUrlsCompleted.pWrite && (wlxtCalGlobal.calendarUrlsCompleted.dWrite instanceof Boolean && wlxtCalGlobal.calendarUrlsCompleted.dWrite == true) && (wlxtCalGlobal.calendarUrlsCompleted.dRead instanceof Boolean && wlxtCalGlobal.calendarUrlsCompleted.dRead == true);
+}
+
+
+//
+function previousAndNextMonth(year,month){
+	//挂载next事件
+	var monthStart = new Date(year,month,1,0,0,0,0);
+	var monthEnd = new Date(year,month+1,1,0,0,0,0);
+	get_events_from_zhjw(monthStart,monthEnd);
+	loadCalByType(calendarTypes.All); 
+}
+
+
+</script>
+
+<script type="text/javascript">
+baseUrl = '';
+$(function() {
+		if(false == true){
+		
+		}else{
+			//1当前时间
+			var curTime = "2019-02-21 02:58:39";
+// 			var curTime = new Date();
+// 			var curTime = new Date().Format("yyyy-MM-dd hh:mm:ss");
+// 			alert(curTime);
+			//2把字符串格式转换为日期类
+// 			var startTime = new Date(Date.parse("2019-01-14 00:00:00"));
+			var startTime = "2019-01-14 00:00:00";
+// 			var endTime = new Date(Date.parse("2019-01-28 00:00:00"));
+			var endTime = "2019-01-28 00:00:00";
+			//3进行比较
+			if(curTime>startTime && curTime<endTime ){
+				$("#yqxq").css("display","none");
+			}
+		}
+		if(false == true){
+			$("#yqxq").css("display","none");
+		}else{
+			
+		}
+		
+     $("#myTabs li").click(function(event) {
+         var dom = $(this).find("a").attr("class");
+         if ($(".calendar").hasClass('top')) { //1,2,3
+             if (dom.match(/[1,2,3]+/g) == null) {
+                 $(".calendar").removeClass('top');
+
+             }
+         } else {
+             if (dom.match(/[1,2,3]+/g) != null) {
+                 $(".calendar").addClass('top');
+
+             }
+         }
+
+         
+        $(this).addClass('active').siblings('').removeClass('active');
+        $("#myTabContent >div").removeClass('in');
+        $(dom).addClass('in');
+    }); 
+});    
+</script>
