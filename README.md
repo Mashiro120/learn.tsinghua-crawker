@@ -2,5 +2,5 @@
 the scripts for downloading learning material into folder
 + login---success
 + lessonid---success
-+ file downloader---in progress
++ file downloader---finished....? being tested
 + ...
